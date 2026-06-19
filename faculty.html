@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="Meet the dedicated faculty of Vihasant Sagar Public School, Agra." />
+  <title>Faculty | Vihasant Sagar Public School, Agra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Top bar -->
+  <div class="bg-brand text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-1">
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +91 98765 43210</span>
+        <span class="hidden sm:inline"><i class="fas fa-envelope mr-1 text-accent"></i> info@vspsagra.edu.in</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hover:text-accent"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-twitter"></i></a>
+        <a href="admissions.html" class="ml-2 bg-accent text-brand px-3 py-1 rounded-full font-semibold hover:bg-amber-400 transition">Apply Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-white sticky top-0 z-40 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Vihasant Sagar Public School Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5 shadow-md">
+        <div class="leading-tight"><div class="font-serif font-bold text-brand text-lg">Vihasant Sagar</div><div class="text-xs text-slate-500 -mt-0.5">Public School, Agra</div></div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="faculty.html" class="nav-link">Faculty</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="menuToggle" class="lg:hidden text-2xl text-brand p-2" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars icon-open"></i>
+        <i class="fas fa-times icon-close hidden"></i>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden bg-white border-t border-slate-200">
+      <div class="flex flex-col px-4 py-3 gap-2">
+        <a href="index.html" class="nav-link py-2">Home</a>
+        <a href="about.html" class="nav-link py-2">About</a>
+        <a href="academics.html" class="nav-link py-2">Academics</a>
+        <a href="admissions.html" class="nav-link py-2">Admissions</a>
+        <a href="faculty.html" class="nav-link py-2">Faculty</a>
+        <a href="gallery.html" class="nav-link py-2">Gallery</a>
+        <a href="events.html" class="nav-link py-2">Events</a>
+        <a href="contact.html" class="nav-link py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header text-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold mb-3">Our Faculty</h1>
+      <p class="text-slate-200">Home <i class="fas fa-chevron-right text-xs mx-2"></i> <span class="text-accent">Faculty</span></p>
+    </div>
+  </header>
+
+  <!-- Leadership -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Guiding Force</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">School Leadership</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7 max-w-5xl mx-auto">
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-72"><img src="assets/images/guru.jpeg" alt="Principal" class="w-full h-full object-cover"></div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-xl font-bold text-brand">Dr. Anjali Verma</h3>
+            <p class="text-accent font-medium text-sm uppercase tracking-wide mt-1">Principal</p>
+            <p class="text-slate-600 text-sm mt-3">Ph.D. in Education, 25+ years of academic leadership.</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-72"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Vice Principal" class="w-full h-full object-cover"></div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-xl font-bold text-brand">Mr. Rajesh Mishra</h3>
+            <p class="text-accent font-medium text-sm uppercase tracking-wide mt-1">Vice Principal</p>
+            <p class="text-slate-600 text-sm mt-3">M.Sc., M.Ed., Curriculum & Innovation Lead.</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-72"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Dean" class="w-full h-full object-cover"></div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-xl font-bold text-brand">Ms. Kavita Joshi</h3>
+            <p class="text-accent font-medium text-sm uppercase tracking-wide mt-1">Academic Dean</p>
+            <p class="text-slate-600 text-sm mt-3">M.A. (English), Cambridge-certified educator.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department heads -->
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Subject Experts</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">Department Heads</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Ms. Neha Singh</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - English</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Mr. Sanjay Kumar</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Mathematics</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Dr. Rashmi Sharma</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Sciences</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Mr. Arvind Yadav</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Social Sciences</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Ms. Pooja Tiwari</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Commerce</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Mr. Vikas Gupta</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Computer Science</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Ms. Shruti Bansal</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Hindi & Sanskrit</p>
+          </div>
+        </div>
+        <div class="reveal faculty-card bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="overflow-hidden h-56"><img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=500&q=80" alt="Teacher" class="w-full h-full object-cover"></div>
+          <div class="p-5 text-center">
+            <h3 class="font-serif font-bold text-brand">Mr. Amit Chauhan</h3>
+            <p class="text-accent text-xs uppercase tracking-wider mt-1">HoD - Sports & PE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty stats -->
+  <section class="py-20 bg-brand text-white">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div class="reveal"><div class="text-4xl font-bold text-accent">120+</div><div class="text-slate-300 text-sm uppercase mt-2 tracking-wide">Teachers</div></div>
+      <div class="reveal"><div class="text-4xl font-bold text-accent">85%</div><div class="text-slate-300 text-sm uppercase mt-2 tracking-wide">Post-Graduates</div></div>
+      <div class="reveal"><div class="text-4xl font-bold text-accent">15+</div><div class="text-slate-300 text-sm uppercase mt-2 tracking-wide">Avg. Experience (yrs)</div></div>
+      <div class="reveal"><div class="text-4xl font-bold text-accent">1:18</div><div class="text-slate-300 text-sm uppercase mt-2 tracking-wide">Teacher : Student</div></div>
+    </div>
+  </section>
+
+  <!-- Join us -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="text-accent font-semibold uppercase tracking-wider text-sm">Careers</span>
+      <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3 mb-6">Join Our Team</h2>
+      <p class="text-slate-600 leading-relaxed mb-7">
+        We are always looking for passionate educators who believe in shaping young minds. If you would like to be a part of the VSPS family, send your CV to our HR team.
+      </p>
+      <a href="mailto:careers@vspsagra.edu.in" class="btn-primary"><i class="fas fa-envelope"></i> careers@vspsagra.edu.in</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="VSPS Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5">
+          <div><div class="font-serif font-bold text-white text-lg">Vihasant Sagar</div><div class="text-xs text-slate-400">Public School, Agra</div></div>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">Nurturing minds and building character since 1998.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-accent">About Us</a></li>
+          <li><a href="academics.html" class="hover:text-accent">Academics</a></li>
+          <li><a href="admissions.html" class="hover:text-accent">Admissions</a></li>
+          <li><a href="faculty.html" class="hover:text-accent">Faculty</a></li>
+          <li><a href="gallery.html" class="hover:text-accent">Gallery</a></li>
+          <li><a href="events.html" class="hover:text-accent">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Contact Info</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3"><i class="fas fa-location-dot text-accent mt-1"></i><span>Sikandra-Bodla Road,<br/>Agra, Uttar Pradesh 282007</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-phone text-accent mt-1"></i><span>+91 98765 43210<br/>+91 0562 - 2345678</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-envelope text-accent mt-1"></i><span>info@vspsagra.edu.in</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">School Hours</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Mon - Fri</span><span>8:00 AM - 2:30 PM</span></li>
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Saturday</span><span>8:00 AM - 12:30 PM</span></li>
+          <li class="flex justify-between"><span>Sunday</span><span class="text-accent">Closed</span></li>
+        </ul>
+        <a href="contact.html" class="mt-5 inline-block btn-primary"><i class="fas fa-envelope-open-text"></i> Get In Touch</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-slate-500">
+      <p>© <span id="currentYear">2026</span> Vihasant Sagar Public School, Agra. All rights reserved.</p>
+      <p>Designed with <i class="fas fa-heart text-accent"></i> for the next generation.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="bg-accent text-brand w-12 h-12 rounded-full shadow-lg hover:bg-amber-400" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>

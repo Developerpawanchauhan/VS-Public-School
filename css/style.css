@@ -1,0 +1,348 @@
+/* ==========================================================================
+   Vihasant Sagar Public School — Custom Styles
+   Theme: Deep Navy (#0b2447) + Amber/Gold (#f59e0b)
+   ========================================================================== */
+
+:root {
+  --color-primary: #0b2447;
+  --color-primary-light: #19376d;
+  --color-accent: #f59e0b;
+  --color-accent-dark: #b45309;
+  --color-bg: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+/* Brand colors as Tailwind-friendly utility shortcuts */
+.bg-brand        { background-color: var(--color-primary); }
+.bg-brand-light  { background-color: var(--color-primary-light); }
+.bg-accent       { background-color: var(--color-accent); }
+.text-brand      { color: var(--color-primary); }
+.text-accent     { color: var(--color-accent); }
+.border-brand    { border-color: var(--color-primary); }
+.border-accent   { border-color: var(--color-accent); }
+.ring-accent     { --tw-ring-color: var(--color-accent); }
+
+/* Hero overlay with subtle pattern */
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(11, 36, 71, 0.85) 0%, rgba(25, 55, 109, 0.75) 100%);
+}
+
+.hero-bg {
+  background-image:
+    linear-gradient(135deg, rgba(11, 36, 71, 0.45) 0%, rgba(25, 55, 109, 0.30) 100%),
+    url('../assets/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Section title underline */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.75rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+}
+.section-title.text-left::after {
+  left: 0;
+  transform: none;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(11, 36, 71, 0.25);
+}
+
+/* Primary button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-accent);
+  color: #0b2447;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+}
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.45);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1.7rem;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+.btn-outline:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+/* Navbar link */
+.nav-link {
+  position: relative;
+  color: #1f2937;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--color-primary);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+/* Page header (sub-pages) */
+.page-header {
+  background:
+    linear-gradient(135deg, rgba(11, 36, 71, 0.92) 0%, rgba(25, 55, 109, 0.85) 100%),
+    url('../assets/images/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gallery grid items */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  position: relative;
+}
+.gallery-item img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(11, 36, 71, 0.6), transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Gallery filter buttons */
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  border: 2px solid #e2e8f0;
+  background: #fff;
+  color: #475569;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-primary);
+}
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* Faculty card */
+.faculty-card img {
+  transition: transform 0.4s ease;
+}
+.faculty-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Spiritual Inspiration section — frameless "deity-style" guru image
+   ========================================================================== */
+
+.inspiration-section {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(11, 36, 71, 0.05) 0%, transparent 50%),
+    #ffffff;
+}
+
+/* Soft golden halo behind the guru */
+.guru-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem;
+  isolation: isolate;
+}
+.guru-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.15) 35%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(10px);
+  animation: halo-pulse 4s ease-in-out infinite;
+}
+
+@keyframes halo-pulse {
+  0%, 100% { transform: scale(1);    opacity: 0.85; }
+  50%      { transform: scale(1.06); opacity: 1; }
+}
+
+/* The guru image itself — feathered into transparency, deep drop-shadow,
+   no frame, no rounded card. Looks like a transparent PNG floating freely. */
+.guru-image {
+  display: block;
+  width: 18rem;
+  max-width: 100%;
+  height: auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+
+  /* feather the JPEG edges into transparency to mimic an open PNG */
+  -webkit-mask-image: radial-gradient(ellipse 65% 75% at center, #000 55%, transparent 90%);
+          mask-image: radial-gradient(ellipse 65% 75% at center, #000 55%, transparent 90%);
+
+  /* divine glow */
+  filter:
+    drop-shadow(0 8px 18px rgba(245, 158, 11, 0.40))
+    drop-shadow(0 4px 12px rgba(11, 36, 71, 0.25));
+}
+
+/* Form input focus */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+/* Marquee for announcements */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Fade-in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer styling */
+footer a {
+  transition: color 0.2s ease;
+}
+
+/* Scroll-to-top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+#scrollTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Mobile menu animation */
+#mobileMenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+#mobileMenu.open {
+  max-height: 600px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-bg { background-attachment: scroll; }
+}

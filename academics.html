@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="Academic programs, curriculum and facilities at Vihasant Sagar Public School, Agra." />
+  <title>Academics | Vihasant Sagar Public School, Agra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Top bar -->
+  <div class="bg-brand text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-1">
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +91 98765 43210</span>
+        <span class="hidden sm:inline"><i class="fas fa-envelope mr-1 text-accent"></i> info@vspsagra.edu.in</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hover:text-accent"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-twitter"></i></a>
+        <a href="admissions.html" class="ml-2 bg-accent text-brand px-3 py-1 rounded-full font-semibold hover:bg-amber-400 transition">Apply Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-white sticky top-0 z-40 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Vihasant Sagar Public School Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5 shadow-md">
+        <div class="leading-tight">
+          <div class="font-serif font-bold text-brand text-lg">Vihasant Sagar</div>
+          <div class="text-xs text-slate-500 -mt-0.5">Public School, Agra</div>
+        </div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="index.html"      class="nav-link">Home</a>
+        <a href="about.html"      class="nav-link">About</a>
+        <a href="academics.html"  class="nav-link">Academics</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="faculty.html"    class="nav-link">Faculty</a>
+        <a href="gallery.html"    class="nav-link">Gallery</a>
+        <a href="events.html"     class="nav-link">Events</a>
+        <a href="contact.html"    class="nav-link">Contact</a>
+      </div>
+      <button id="menuToggle" class="lg:hidden text-2xl text-brand p-2" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars icon-open"></i>
+        <i class="fas fa-times icon-close hidden"></i>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden bg-white border-t border-slate-200">
+      <div class="flex flex-col px-4 py-3 gap-2">
+        <a href="index.html"      class="nav-link py-2">Home</a>
+        <a href="about.html"      class="nav-link py-2">About</a>
+        <a href="academics.html"  class="nav-link py-2">Academics</a>
+        <a href="admissions.html" class="nav-link py-2">Admissions</a>
+        <a href="faculty.html"    class="nav-link py-2">Faculty</a>
+        <a href="gallery.html"    class="nav-link py-2">Gallery</a>
+        <a href="events.html"     class="nav-link py-2">Events</a>
+        <a href="contact.html"    class="nav-link py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header text-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold mb-3">Academics</h1>
+      <p class="text-slate-200">Home <i class="fas fa-chevron-right text-xs mx-2"></i> <span class="text-accent">Academics</span></p>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <span class="text-accent font-semibold uppercase tracking-wider text-sm">Curriculum</span>
+      <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3 mb-6">Learning that Inspires</h2>
+      <p class="text-slate-600 leading-relaxed">
+        At VSPS, we follow the CBSE curriculum, enriched with experiential learning, life skills, and a wide range of co-curricular pursuits. Our academic structure is divided into four phases — each carefully designed to match the developmental stage of the learner.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="pb-20">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="assets/images/playground.png" alt="Pre-Primary" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <span class="text-xs font-semibold text-accent uppercase">Nursery - KG</span>
+          <h3 class="font-serif text-xl font-bold text-brand mt-2 mb-2">Pre-Primary</h3>
+          <p class="text-slate-600 text-sm">Play-based learning, phonics, numeracy, motor skills and storytelling for ages 3-5.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="assets/images/classroom.png" alt="Primary" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <span class="text-xs font-semibold text-accent uppercase">Class I - V</span>
+          <h3 class="font-serif text-xl font-bold text-brand mt-2 mb-2">Primary</h3>
+          <p class="text-slate-600 text-sm">Foundational literacy, numeracy, science exploration and creative arts in a joyful environment.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="assets/images/library.jpeg" alt="Middle School" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <span class="text-xs font-semibold text-accent uppercase">Class VI - VIII</span>
+          <h3 class="font-serif text-xl font-bold text-brand mt-2 mb-2">Middle School</h3>
+          <p class="text-slate-600 text-sm">Concept-driven learning across Sciences, Humanities, Mathematics and Languages with project work.</p>
+        </div>
+      </div>
+      <div class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+        <img src="assets/images/food.png" alt="Senior School" class="w-full h-44 object-cover">
+        <div class="p-6">
+          <span class="text-xs font-semibold text-accent uppercase">Class IX - XII</span>
+          <h3 class="font-serif text-xl font-bold text-brand mt-2 mb-2">Senior School</h3>
+          <p class="text-slate-600 text-sm">Streams in Science, Commerce & Humanities with rigorous board prep and career guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Streams -->
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Class XI - XII</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">Streams Offered</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        <div class="reveal card-hover bg-white p-8 rounded-xl shadow-md border-t-4 border-accent">
+          <div class="w-14 h-14 bg-brand text-accent rounded-lg flex items-center justify-center text-2xl mb-5"><i class="fas fa-atom"></i></div>
+          <h3 class="font-serif text-xl font-bold text-brand mb-3">Science</h3>
+          <p class="text-slate-600 text-sm mb-4">Physics, Chemistry, Mathematics / Biology, English, plus optional Computer Science / Physical Education.</p>
+          <p class="text-xs text-slate-500"><strong>Career Paths:</strong> Engineering, Medicine, Research, Data Science</p>
+        </div>
+        <div class="reveal card-hover bg-white p-8 rounded-xl shadow-md border-t-4 border-accent">
+          <div class="w-14 h-14 bg-brand text-accent rounded-lg flex items-center justify-center text-2xl mb-5"><i class="fas fa-chart-line"></i></div>
+          <h3 class="font-serif text-xl font-bold text-brand mb-3">Commerce</h3>
+          <p class="text-slate-600 text-sm mb-4">Accountancy, Business Studies, Economics, English, plus Mathematics / Informatics Practices.</p>
+          <p class="text-xs text-slate-500"><strong>Career Paths:</strong> CA, MBA, Finance, Entrepreneurship</p>
+        </div>
+        <div class="reveal card-hover bg-white p-8 rounded-xl shadow-md border-t-4 border-accent">
+          <div class="w-14 h-14 bg-brand text-accent rounded-lg flex items-center justify-center text-2xl mb-5"><i class="fas fa-book"></i></div>
+          <h3 class="font-serif text-xl font-bold text-brand mb-3">Humanities</h3>
+          <p class="text-slate-600 text-sm mb-4">History, Political Science, Geography, Economics, English, with options like Psychology / Sociology.</p>
+          <p class="text-xs text-slate-500"><strong>Career Paths:</strong> Civil Services, Law, Media, Social Sciences</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Infrastructure</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">World-Class Facilities</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-flask text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Science Labs</h3><p class="text-sm text-slate-600">Fully-equipped Physics, Chemistry & Biology labs.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-laptop-code text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Computer Labs</h3><p class="text-sm text-slate-600">High-speed internet, modern systems and coding curriculum.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-book-bookmark text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Library</h3><p class="text-sm text-slate-600">15,000+ books, journals & a quiet digital reading zone.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-chalkboard-user text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Smart Classrooms</h3><p class="text-sm text-slate-600">Interactive displays and audio-visual learning resources.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-futbol text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Sports Complex</h3><p class="text-sm text-slate-600">Football, cricket, basketball, athletics & indoor games.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-music text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Arts & Music</h3><p class="text-sm text-slate-600">Dedicated rooms for music, dance, drama and visual arts.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-bus text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Transport</h3><p class="text-sm text-slate-600">GPS-tracked buses with female attendants on every route.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-utensils text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Cafeteria</h3><p class="text-sm text-slate-600">Hygienic, nutritious meals prepared on-site by trained chefs.</p></div>
+        </div>
+        <div class="reveal flex gap-4 items-start bg-white p-6 rounded-xl shadow-md card-hover">
+          <i class="fas fa-kit-medical text-3xl text-accent"></i>
+          <div><h3 class="font-serif font-bold text-brand mb-1">Medical Room</h3><p class="text-sm text-slate-600">On-call doctor and full-time nurse for first-aid & wellness.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-brand text-white py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4">Curious About Our Programs?</h2>
+      <p class="text-slate-200 mb-8 max-w-2xl mx-auto">Get the full curriculum brochure or talk to our academic counsellor today.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="admissions.html" class="btn-primary">Apply Now <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="btn-outline">Talk to Counsellor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="VSPS Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5">
+          <div><div class="font-serif font-bold text-white text-lg">Vihasant Sagar</div><div class="text-xs text-slate-400">Public School, Agra</div></div>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">Nurturing minds and building character since 1998.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-accent">About Us</a></li>
+          <li><a href="academics.html" class="hover:text-accent">Academics</a></li>
+          <li><a href="admissions.html" class="hover:text-accent">Admissions</a></li>
+          <li><a href="faculty.html" class="hover:text-accent">Faculty</a></li>
+          <li><a href="gallery.html" class="hover:text-accent">Gallery</a></li>
+          <li><a href="events.html" class="hover:text-accent">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Contact Info</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3"><i class="fas fa-location-dot text-accent mt-1"></i><span>Sikandra-Bodla Road,<br/>Agra, Uttar Pradesh 282007</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-phone text-accent mt-1"></i><span>+91 98765 43210<br/>+91 0562 - 2345678</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-envelope text-accent mt-1"></i><span>info@vspsagra.edu.in</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">School Hours</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Mon - Fri</span><span>8:00 AM - 2:30 PM</span></li>
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Saturday</span><span>8:00 AM - 12:30 PM</span></li>
+          <li class="flex justify-between"><span>Sunday</span><span class="text-accent">Closed</span></li>
+        </ul>
+        <a href="contact.html" class="mt-5 inline-block btn-primary"><i class="fas fa-envelope-open-text"></i> Get In Touch</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-slate-500">
+      <p>© <span id="currentYear">2026</span> Vihasant Sagar Public School, Agra. All rights reserved.</p>
+      <p>Designed with <i class="fas fa-heart text-accent"></i> for the next generation.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="bg-accent text-brand w-12 h-12 rounded-full shadow-lg hover:bg-amber-400" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>

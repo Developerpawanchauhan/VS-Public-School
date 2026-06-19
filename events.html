@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="School events, news and announcements at Vihasant Sagar Public School, Agra." />
+  <title>Events & News | Vihasant Sagar Public School, Agra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Top bar -->
+  <div class="bg-brand text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-1">
+      <div class="flex items-center gap-4">
+        <span><i class="fas fa-phone-alt mr-1 text-accent"></i> +91 98765 43210</span>
+        <span class="hidden sm:inline"><i class="fas fa-envelope mr-1 text-accent"></i> info@vspsagra.edu.in</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#" class="hover:text-accent"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="hover:text-accent"><i class="fab fa-twitter"></i></a>
+        <a href="admissions.html" class="ml-2 bg-accent text-brand px-3 py-1 rounded-full font-semibold hover:bg-amber-400 transition">Apply Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="bg-white sticky top-0 z-40 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Vihasant Sagar Public School Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5 shadow-md">
+        <div class="leading-tight"><div class="font-serif font-bold text-brand text-lg">Vihasant Sagar</div><div class="text-xs text-slate-500 -mt-0.5">Public School, Agra</div></div>
+      </a>
+      <div class="hidden lg:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="academics.html" class="nav-link">Academics</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="faculty.html" class="nav-link">Faculty</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button id="menuToggle" class="lg:hidden text-2xl text-brand p-2" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars icon-open"></i>
+        <i class="fas fa-times icon-close hidden"></i>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden bg-white border-t border-slate-200">
+      <div class="flex flex-col px-4 py-3 gap-2">
+        <a href="index.html" class="nav-link py-2">Home</a>
+        <a href="about.html" class="nav-link py-2">About</a>
+        <a href="academics.html" class="nav-link py-2">Academics</a>
+        <a href="admissions.html" class="nav-link py-2">Admissions</a>
+        <a href="faculty.html" class="nav-link py-2">Faculty</a>
+        <a href="gallery.html" class="nav-link py-2">Gallery</a>
+        <a href="events.html" class="nav-link py-2">Events</a>
+        <a href="contact.html" class="nav-link py-2">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header text-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold mb-3">Events & News</h1>
+      <p class="text-slate-200">Home <i class="fas fa-chevron-right text-xs mx-2"></i> <span class="text-accent">Events</span></p>
+    </div>
+  </header>
+
+  <!-- Upcoming -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Mark Your Calendar</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">Upcoming Events</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="assets/images/playground.png" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">15</div>
+              <div class="text-xs uppercase">Dec</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">Sports</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">Annual Sports Day 2026</h3>
+            <p class="text-slate-600 text-sm mb-4">An action-packed day of athletics, team games, and inter-house competitions.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 9:00 AM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> School Ground</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="assets/images/classroom.png" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">22</div>
+              <div class="text-xs uppercase">Dec</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">Academics</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">STEM Innovation Fair</h3>
+            <p class="text-slate-600 text-sm mb-4">Showcasing student-built models on AI, robotics, sustainability and renewable energy.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 10:00 AM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> School Auditorium</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1465225314224-587cd83d322b?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">10</div>
+              <div class="text-xs uppercase">Jan</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">Cultural</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">Annual Cultural Evening</h3>
+            <p class="text-slate-600 text-sm mb-4">A vibrant celebration of music, dance and drama by our talented students.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 5:30 PM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> Open Air Theatre</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">26</div>
+              <div class="text-xs uppercase">Jan</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">National</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">Republic Day Celebration</h3>
+            <p class="text-slate-600 text-sm mb-4">Flag hoisting, parade, patriotic performances and chief guest address.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 8:00 AM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> Main Ground</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">08</div>
+              <div class="text-xs uppercase">Feb</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">Career</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">Career Counselling Workshop</h3>
+            <p class="text-slate-600 text-sm mb-4">Industry experts guiding senior students on career options and college admissions.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 11:00 AM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> Seminar Hall</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal card-hover bg-white rounded-xl overflow-hidden shadow-md">
+          <div class="relative">
+            <img src="assets/images/library.jpeg" alt="" class="w-full h-52 object-cover">
+            <div class="absolute top-3 left-3 bg-accent text-brand font-bold text-center w-16 py-2 rounded-lg shadow-lg">
+              <div class="text-xl leading-none">15</div>
+              <div class="text-xs uppercase">Mar</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-xs uppercase tracking-wide font-semibold text-accent">Ceremony</span>
+            <h3 class="font-serif text-xl font-bold text-brand mt-1 mb-2">Annual Day & Awards Night</h3>
+            <p class="text-slate-600 text-sm mb-4">Recognising student achievements across academics, sports, arts and leadership.</p>
+            <div class="flex items-center gap-4 text-xs text-slate-500">
+              <span><i class="far fa-clock text-accent mr-1"></i> 6:00 PM</span>
+              <span><i class="fas fa-location-dot text-accent mr-1"></i> Main Auditorium</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent News -->
+  <section class="py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14">
+        <span class="text-accent font-semibold uppercase tracking-wider text-sm">Latest Updates</span>
+        <h2 class="section-title font-serif text-3xl md:text-4xl font-bold text-brand mt-3">Recent News</h2>
+      </div>
+
+      <div class="space-y-5 max-w-4xl mx-auto">
+        <article class="reveal flex flex-col md:flex-row gap-5 bg-white p-5 rounded-xl shadow-md card-hover">
+          <img src="https://images.unsplash.com/photo-1560523159-4a9692d222f9?auto=format&fit=crop&w=400&q=80" class="w-full md:w-48 h-32 md:h-auto object-cover rounded-lg" alt="">
+          <div>
+            <span class="text-xs text-slate-500"><i class="far fa-calendar text-accent mr-1"></i> 18 Nov 2026</span>
+            <h3 class="font-serif text-lg font-bold text-brand mt-1 mb-2">VSPS Wins District-Level Quiz Championship</h3>
+            <p class="text-slate-600 text-sm">Our Class X team defeated 24 schools to lift the trophy at the Inter-School Knowledge Olympiad.</p>
+          </div>
+        </article>
+
+        <article class="reveal flex flex-col md:flex-row gap-5 bg-white p-5 rounded-xl shadow-md card-hover">
+          <img src="assets/images/classroom.png" class="w-full md:w-48 h-32 md:h-auto object-cover rounded-lg" alt="">
+          <div>
+            <span class="text-xs text-slate-500"><i class="far fa-calendar text-accent mr-1"></i> 02 Nov 2026</span>
+            <h3 class="font-serif text-lg font-bold text-brand mt-1 mb-2">New STEM Innovation Lab Inaugurated</h3>
+            <p class="text-slate-600 text-sm">A 2,000 sq ft lab equipped with 3D printers, robotics kits and AI workstations was opened to students.</p>
+          </div>
+        </article>
+
+        <article class="reveal flex flex-col md:flex-row gap-5 bg-white p-5 rounded-xl shadow-md card-hover">
+          <img src="assets/images/food.png" class="w-full md:w-48 h-32 md:h-auto object-cover rounded-lg" alt="">
+          <div>
+            <span class="text-xs text-slate-500"><i class="far fa-calendar text-accent mr-1"></i> 20 Oct 2026</span>
+            <h3 class="font-serif text-lg font-bold text-brand mt-1 mb-2">Class XII Toppers Felicitated</h3>
+            <p class="text-slate-600 text-sm">A special ceremony honoured our 2026 board exam toppers, with three students above 95%.</p>
+          </div>
+        </article>
+
+        <article class="reveal flex flex-col md:flex-row gap-5 bg-white p-5 rounded-xl shadow-md card-hover">
+          <img src="assets/images/playground.png" class="w-full md:w-48 h-32 md:h-auto object-cover rounded-lg" alt="">
+          <div>
+            <span class="text-xs text-slate-500"><i class="far fa-calendar text-accent mr-1"></i> 12 Oct 2026</span>
+            <h3 class="font-serif text-lg font-bold text-brand mt-1 mb-2">U-14 Football Team Reaches State Finals</h3>
+            <p class="text-slate-600 text-sm">After an unbeaten run in district matches, our young footballers will represent Agra at the state level.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.png" alt="VSPS Logo" class="w-12 h-12 rounded-full object-contain bg-white p-0.5">
+          <div><div class="font-serif font-bold text-white text-lg">Vihasant Sagar</div><div class="text-xs text-slate-400">Public School, Agra</div></div>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">Nurturing minds and building character since 1998.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-accent hover:text-brand flex items-center justify-center transition"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-accent">About Us</a></li>
+          <li><a href="academics.html" class="hover:text-accent">Academics</a></li>
+          <li><a href="admissions.html" class="hover:text-accent">Admissions</a></li>
+          <li><a href="faculty.html" class="hover:text-accent">Faculty</a></li>
+          <li><a href="gallery.html" class="hover:text-accent">Gallery</a></li>
+          <li><a href="events.html" class="hover:text-accent">Events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">Contact Info</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3"><i class="fas fa-location-dot text-accent mt-1"></i><span>Sikandra-Bodla Road,<br/>Agra, Uttar Pradesh 282007</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-phone text-accent mt-1"></i><span>+91 98765 43210<br/>+91 0562 - 2345678</span></li>
+          <li class="flex items-start gap-3"><i class="fas fa-envelope text-accent mt-1"></i><span>info@vspsagra.edu.in</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-white font-bold text-lg mb-4">School Hours</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Mon - Fri</span><span>8:00 AM - 2:30 PM</span></li>
+          <li class="flex justify-between border-b border-slate-700 pb-1"><span>Saturday</span><span>8:00 AM - 12:30 PM</span></li>
+          <li class="flex justify-between"><span>Sunday</span><span class="text-accent">Closed</span></li>
+        </ul>
+        <a href="contact.html" class="mt-5 inline-block btn-primary"><i class="fas fa-envelope-open-text"></i> Get In Touch</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-2 text-sm text-slate-500">
+      <p>© <span id="currentYear">2026</span> Vihasant Sagar Public School, Agra. All rights reserved.</p>
+      <p>Designed with <i class="fas fa-heart text-accent"></i> for the next generation.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="bg-accent text-brand w-12 h-12 rounded-full shadow-lg hover:bg-amber-400" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>
